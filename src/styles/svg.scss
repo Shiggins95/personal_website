@@ -1,0 +1,25 @@
+@import "variables";
+.svg {
+  svg {
+    .svg_path {
+      fill: $dark_blue;
+    }
+    .svg_path_2{
+      width: 100%;
+      height: 100%;
+    }
+    .psql_outline{
+      fill: $light_blue;
+    }
+  }
+}
+
+#vue_svg {
+  .svg_path{
+    stroke: $dark_blue;
+    fill: $dark_blue;
+  }
+  .top_vue{
+    //fill: $light_blue;
+  }
+}

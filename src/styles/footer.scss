@@ -1,0 +1,14 @@
+@import "mixins";
+@import "variables";
+#footer{
+  height: 50px;
+  background-color: $dark_blue;
+  border-top: 5px solid $light_gray;
+  width: 100%;
+  @include flex_center_row;
+  p{
+    color: $light_blue;
+    font-family: 'Caveat', cursive;
+
+  }
+}

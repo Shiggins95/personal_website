@@ -1,0 +1,71 @@
+.header {
+  padding: 0 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.header h1 {
+  margin-bottom: 20px;
+  color: #82ffeb;
+}
+.header p {
+  margin: 5px 0;
+}
+.header .tech_span, .header .desc_span {
+  color: #ecff99;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.body {
+  width: 100%;
+  padding: 0 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.body p {
+  margin: 5px 0;
+}
+.body .tech_span, .body .desc_span {
+  color: #ecff99;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.body #time_estimate {
+  color: #ecff99;
+}
+.body .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.body .links #github_svg path {
+  fill: #6f7ca5;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+.body .links #github_svg:hover path {
+  fill: #99A8B6;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+/*# sourceMappingURL=project_description.css.map */

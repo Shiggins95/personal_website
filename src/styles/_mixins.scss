@@ -1,0 +1,59 @@
+@mixin flex_row {
+  display: flex;
+  flex-direction: row;
+}
+@mixin flex_col {
+  display: flex;
+  flex-direction: column;
+}
+@mixin flex_row_wrap {
+  display: flex;
+  flex-flow: row wrap;
+}
+@mixin flex_center_row {
+  @include flex_row;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex_center_row_wrap {
+  @include flex_row_wrap;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex_center_col {
+  @include flex_col;
+  justify-content: center;
+  align-items: center;
+}
+@mixin transition($val) {
+  -webkit-transition: $val ease;
+  -moz-transition: $val ease;
+  -ms-transition: $val ease;
+  -o-transition: $val ease;
+  transition: $val ease;
+}
+@mixin border_radius($val) {
+  -webkit-border-radius: $val;
+  -moz-border-radius: $val;
+  border-radius: $val;
+}
+@mixin transform($val) {
+  -webkit-transform: $val;
+  -moz-transform: $val;
+  -ms-transform: $val;
+  -o-transform: $val;
+  transform: $val;
+}
+@mixin animation_name($val) {
+  -webkit-animation-name: $val;
+  -moz-animation-name: $val;
+  -o-animation-name: $val;
+  animation-name: $val;
+}
+
+@mixin animation_duration($val) {
+  -webkit-animation-duration: $val;
+  -moz-animation-duration: $val;
+  -o-animation-duration: $val;
+  animation-duration: $val;
+}

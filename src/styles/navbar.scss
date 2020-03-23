@@ -1,0 +1,54 @@
+@import "./_mixins.scss";
+@import "./_variables.scss";
+#navbar{
+  @include flex_center_col;
+  background: $dark_blue;
+  border-right: 5px solid $light_gray;
+  height: 100%;
+  position: relative;
+  .links{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    @include flex_center_row;
+    justify-content: space-evenly;
+    a{
+      margin: 20px;
+      .svg_path{
+        fill: $light_blue;
+      }
+    }
+  }
+  .fa_menu_bars{
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  #navbar{
+    width: 100%;
+    border: none;
+    padding: 5px;
+    .fa_menu_bars{
+      display: block;
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 100;
+      @include transform(scale(2));
+    }
+  }
+}
+
+@media (orientation: landscape) and (max-width: 800px) {
+  #navbar{
+    .fa_menu_bars{
+      display: block;
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 99;
+      @include transform(scale(2));
+    }
+  }
+}

@@ -1,0 +1,149 @@
+@import "variables";
+@import "mixins";
+#home_container{
+  @include flex_center_col;
+  display: flex;
+  background: $light_blue;
+  .welcome{
+    @include flex_center_col;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    border-bottom: 5px solid $light_gray;
+    h1, h2{
+      font-weight: 100;
+      color: $white;
+      text-align: center;
+      #one {
+        color: $contrast_1;
+      }
+      #two {
+        color: $contrast_2;
+      }
+      #three {
+        color: $contrast_3;
+      }
+    }
+    .down_arrow{
+      border: 1px solid black;
+      .fa_chevron_down_1{
+        @include transform(scale(2));
+        position: absolute;
+        bottom: 7.5vh;
+      }
+      .fa_chevron_down_2{
+        @include animation_name(down_arrow);
+        @include transform(scale(0.8));
+        @include animation_duration(0.8s);
+        position: absolute;
+        animation-iteration-count: infinite;
+      }
+      &:hover{
+        cursor: pointer;
+      }
+    }
+
+  }
+  #journey{
+    @include flex_row_wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background: $dark_blue;
+    min-height: 100vh;
+    border-bottom: 5px solid $light_gray;
+    div {
+      @include flex_center_col;
+      @include border_radius(10px);
+      background: $light_blue;
+      width: 40%;
+      margin: 20px 5%;
+      padding: 20px;
+      border: 3px solid $light_gray;
+      min-height: 300px;
+    }
+    .long{
+      width: 90%;
+    }
+    h1{
+      @include flex_center_col;
+      height: 30px;
+      margin: 20px 0;
+      color: $white;
+      width: 100%;
+    }
+    #one{
+      color: $contrast_1;
+    }
+    #two{
+      color: $contrast_2;
+    }
+    #three{
+      color: $contrast_3;
+    }
+    p{
+      margin: 5px;
+      color: $dark_blue;
+    }
+    .wrong_was_i{
+      color: $contrast_2;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  #home_container{
+    #journey{
+      h1{
+        font-size: 1.6em;
+      }
+      @include flex_center_col;
+      div{
+        margin: 10px 0;
+        width: 90%;
+        background: transparent;
+        border: 2px solid $light_gray;
+        color: $light_gray;
+      }
+      p{
+        color: $light_blue;
+      }
+    }
+    .welcome{
+      padding: 20px;
+      h2{
+        font-size: 1em;
+      }
+      .down_arrow {
+        .fa_chevron_down_1 {
+          bottom: 15vh;
+        }
+
+        .fa_chevron_down_2 {
+          @include animation_name(down_arrow_resp);
+          @include transform(scale(0.8));
+          @include animation_duration(0.8s);
+          position: absolute;
+          animation-iteration-count: infinite;
+        }
+      }
+    }
+  }
+}
+
+@keyframes down_arrow {
+  from {
+    bottom: 11vh;
+  }
+  to {
+    bottom: 9.2vh;
+  }
+}
+@keyframes down_arrow_resp {
+  from {
+    bottom: 17vh;
+  }
+  to {
+    bottom: 16vh;
+  }
+}

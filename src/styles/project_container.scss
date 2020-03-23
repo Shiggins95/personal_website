@@ -1,0 +1,126 @@
+@import "variables";
+@import "mixins";
+#project_container{
+  background: $light_blue;
+  min-height: 100vh;
+  @include flex_center_col;
+  justify-content: flex-start;
+  padding: 50px 0;
+  width: 100%;
+  .inner_container{
+    @include flex_center_col;
+    width: 90%;
+    .image{
+      //width: 80%;
+      img{
+        width: 70%;
+      }
+    }
+    .details{
+      width: 100%;
+      background: $dark_blue;
+      border: 3px solid $light_gray;
+      @include border_radius(10px);
+      padding: 30px;
+      margin-top: 20px;
+      @include flex_center_col;
+      text-align: center;
+      color: $light_blue;
+      h1 {
+        color: $contrast_1;
+        margin-bottom: 50px;
+      }
+    }
+    .links{
+      @include flex_center_row_wrap;
+      @include border_radius(10px);
+      background: $dark_blue;
+      border: 3px solid $light_gray;
+      width: 100%;
+      padding: 30px;
+      justify-content: space-around;
+      text-align: center;
+      margin: 50px;
+      h1{
+        width: 100%;
+        margin: 0 0 50px 0;
+        color: $contrast_1;
+      }
+      p{
+        color: $contrast_2;
+        width: 100%;
+      }
+      .url_link{
+        @include flex_center_col;
+        height: 100px;
+        a {
+          #github_svg {
+            margin: 10px;
+
+            path {
+              fill: $light_blue;
+            }
+          }
+
+          img {
+            margin: 10px;
+            width: 40px;
+            background: $light_blue;
+            @include border_radius(50%);
+            @include transition(0.3s);
+            &:hover{
+              @include transition(0.3s);
+              background: $light_gray;
+            }
+          }
+
+          &:hover{
+            @include transition(0.3s);
+            fill: $light_gray;
+            #github_svg{
+              path {
+                @include transition(0.3s);
+                fill: $light_gray;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  #project_container{
+    padding: 20px 0;
+    h1{
+      font-size: 1.5em;
+    }
+    p{
+      font-size: 0.8em;
+    }
+    .inner_container{
+      .details{
+        padding: 20px 0;
+        h1{
+          margin: 0 0 20px 0;
+        }
+      }
+      .image{
+        width: 100%;
+      }
+      .links{
+        h1{
+          margin: 0 0 20px 0;
+        }
+        .url_link{
+          a{
+            #github_svg, img{
+              @include transform(scale(0.9));
+            }
+          }
+        }
+      }
+    }
+  }
+}

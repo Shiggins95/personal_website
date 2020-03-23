@@ -1,0 +1,94 @@
+#showcase_container {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #99A8B6;
+  background: #162547;
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+}
+#showcase_container p {
+  color: #93ffbe;
+}
+#showcase_container .main_image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#showcase_container .main_image img {
+  width: 75vw;
+  border: 3px solid #99A8B6;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  height: 50vh;
+}
+#showcase_container .current_title {
+  height: 2px;
+  color: #93ffbe;
+  margin: 10px 0;
+  text-align: center;
+}
+#showcase_container .selections {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+#showcase_container .selections .selection_image {
+  margin: 10px;
+}
+#showcase_container .selections .selection_image img {
+  width: 100%;
+  border: 3px solid transparent;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+#showcase_container .selections .selection_image img:hover {
+  cursor: pointer;
+  border: 3px solid #99A8B6;
+}
+
+@media (max-width: 800px) {
+  #showcase_container {
+    width: 100%;
+    padding: 20px 0;
+  }
+  #showcase_container p {
+    font-size: 0.7em;
+  }
+  #showcase_container .current_title h2 {
+    font-size: 1em;
+    padding: 0 20px;
+  }
+  #showcase_container .main_image img {
+    width: 100%;
+    height: 150px;
+  }
+  #showcase_container .selections {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  #showcase_container .selections .selection_image {
+    margin: 5px;
+  }
+  #showcase_container .selections .selection_image img {
+    width: 50px;
+  }
+}
+
+/*# sourceMappingURL=showcase.css.map */

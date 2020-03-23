@@ -1,0 +1,165 @@
+#projects_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #6f7ca5;
+  min-height: 100vh;
+  width: 100%;
+  padding: 20px;
+}
+#projects_container .projects_header {
+  margin: 0;
+}
+#projects_container .projects_header h1 {
+  color: #162547;
+}
+#projects_container .projects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: -10px;
+}
+#projects_container .projects .project_container {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  justify-content: space-evenly;
+  width: 100%;
+  min-height: 600px;
+  background: #162547;
+  border: 3px solid #99A8B6;
+  margin: 20px;
+  color: #6f7ca5;
+}
+#projects_container .projects .project_container:nth-child(2n+1) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+#projects_container .projects .project_container .mobile_optimised {
+  position: absolute;
+  -webkit-border-radius: 5px 0 0 0;
+  -moz-border-radius: 5px 0 0 0;
+  border-radius: 5px 0 0 0;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  z-index: 99;
+  background: linear-gradient(to top left, transparent 50%, #6f7ca5 0) top left/100px 100px no-repeat, transparent;
+}
+#projects_container .projects .project_container .mobile_optimised .fa_mobile_alt {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  -webkit-transform: scale(2.5);
+  -moz-transform: scale(2.5);
+  -ms-transform: scale(2.5);
+  -o-transform: scale(2.5);
+  transform: scale(2.5);
+  color: #82ffeb;
+}
+#projects_container .projects .project_container .contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  width: 40%;
+}
+#projects_container .projects .project_container .showcase {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+#projects_container .projects .project_container .showcase .project_image {
+  border: 3px solid #99A8B6;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+@media (max-width: 800px) {
+  #projects_container .projects {
+    width: 100vw;
+  }
+  #projects_container .projects .project_container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    position: relative;
+    padding: 20px 0;
+    width: 100%;
+    justify-content: center;
+  }
+  #projects_container .projects .project_container .contents {
+    width: 100%;
+    margin-top: 200px;
+  }
+  #projects_container .projects .project_container .contents h1 {
+    padding: 10px 0;
+    font-size: 1.5em;
+  }
+  #projects_container .projects .project_container .contents p {
+    font-size: 0.9em;
+  }
+  #projects_container .projects .project_container .showcase {
+    position: absolute;
+    top: 0;
+    min-height: 200px;
+    width: 100%;
+    padding: 20px 0;
+  }
+  #projects_container .projects .project_container .showcase .project_image {
+    width: 90%;
+  }
+}
+@media (orientation: landscape) and (max-width: 800px) {
+  #projects_container .projects {
+    width: 100vw;
+  }
+  #projects_container .projects .project_container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    position: relative;
+    padding: 20px 0;
+    width: 100%;
+    justify-content: center;
+  }
+  #projects_container .projects .project_container .contents {
+    width: 100%;
+    margin-top: 400px;
+  }
+  #projects_container .projects .project_container .contents h1 {
+    padding: 10px 0;
+    font-size: 1.5em;
+  }
+  #projects_container .projects .project_container .contents p {
+    font-size: 0.9em;
+  }
+  #projects_container .projects .project_container .showcase {
+    position: absolute;
+    top: 0;
+    min-height: 200px;
+    width: 100%;
+    padding: 20px 0;
+  }
+  #projects_container .projects .project_container .showcase .project_image {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=projects.css.map */

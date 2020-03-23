@@ -1,0 +1,111 @@
+@import "mixins";
+@import "variables";
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#whole_container {
+  font-family: 'Roboto', sans-serif;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  position: relative;
+  #nav{
+    z-index: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 100vh;
+  }
+  #body{
+    z-index: 0;
+    grid-column-start: 3;
+    grid-column-end: 12;
+    max-height: 100vh;
+    overflow-y: scroll;
+    #scroll_anchor{
+      position: relative;
+      top: -200px;
+      //left: 50%;
+      border: 2px solid red;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+@media (max-width: 800px) and (orientation: portrait) {
+  #whole_container{
+    #nav{
+      position: absolute;
+      height: 100vh;
+      top: 0;
+      width: 100vw;
+      .fa_menu_bars{
+        @include transition(0.5s);
+        color: $light_blue;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
+    .show{
+      @include transition(0.5s);
+      left: 0;
+    }
+    .hidden{
+      @include transition(0.5s);
+      left: -100vw;
+      #navbar{
+        .fa_menu_bars{
+          @include transition(0.5s);
+          color: $dark_blue;
+          z-index: 100;
+        }
+      }
+    }
+    #body{
+      grid-column-start: 1;
+      grid-column-end: 12;
+
+    }
+  }
+}
+@media (orientation: landscape) and (max-width: 800px) {
+  #whole_container{
+    #nav{
+      position: absolute;
+      height: 100vh;
+      top: 0;
+      width: 100%;
+      .fa_menu_bars{
+        @include transition(0.5s);
+        color: $light_blue;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
+    .show{
+      @include transition(0.5s);
+      left: 0;
+    }
+    .hidden{
+      @include transition(0.5s);
+      left: -100%;
+      #navbar{
+        .fa_menu_bars{
+          @include transition(0.5s);
+          color: $dark_blue;
+          z-index: 100;
+        }
+      }
+    }
+    #body{
+      grid-column-start: 1;
+      grid-column-end: 12;
+
+    }
+  }
+}

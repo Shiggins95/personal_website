@@ -1,0 +1,71 @@
+@import "variables";
+@import "mixins";
+#experience_container{
+  //@include flex_center_row_wrap;
+  @include flex_center_col;
+  justify-content: normal;
+  //align-items: normal;
+  //justify-content: normal;
+  min-height: 100vh;
+  width: 100%;
+  .header{
+    padding: 20px 0 0 0;
+    text-align: center;
+    min-height: 10vh;
+    h1{
+      color: $white;
+      margin: 10px;
+    }
+  }
+  .inner_container {
+    @include flex_center_col;
+    min-height: 90vh;
+    width: 100%;
+    justify-content: space-evenly;
+    .language_logos {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      margin: 0;
+      padding: 0;
+
+      .svg {
+        margin: 20px
+      }
+    }
+
+    .experience_blurb {
+      @include flex_center_col;
+      justify-content: space-evenly;
+      text-align: center;
+      width: 90%;
+      min-height: 300px;
+      background: $dark_blue;
+      padding: 20px;
+      border: 3px solid $light_gray;
+      @include border_radius(10px);
+      color: $light_blue;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  #experience_container{
+    .header{
+      h1{
+        font-size: 1.6em;
+      }
+    }
+    .inner_container{
+      margin-top: -20px;
+      .language_logos {
+        @include flex_center_row_wrap;
+        .svg{
+          margin: -15px;
+          svg{
+            @include transform(scale(0.4))
+          }
+        }
+      }
+    }
+  }
+}

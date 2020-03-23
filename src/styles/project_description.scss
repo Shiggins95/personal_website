@@ -1,0 +1,58 @@
+@import "mixins";
+@import "variables";
+.header{
+  padding: 0 20px;
+  height: 100%;
+  @include flex_center_col;
+  text-align: center;
+  h1{
+    margin-bottom: 20px;
+    color: $contrast_3;
+  }
+  p{
+    margin: 5px 0;
+  }
+  .tech_span, .desc_span{
+    color: $contrast_1;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+}
+.body{
+  p{
+    margin: 5px 0;
+  }
+  .tech_span, .desc_span{
+    color: $contrast_1;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  //margin-bottom: 30px;
+  width: 100%;
+  padding: 0 20px;
+  height: 100%;
+  @include flex_center_col;
+  justify-content: space-evenly;
+  text-align: center;
+  #time_estimate{
+    color: $contrast_1;
+  }
+  .links{
+    @include flex_center_row;
+    margin-top: 40px;
+    justify-content: space-evenly;
+    width: 100%;
+    #github_svg{
+      path{
+        fill: $light_blue;
+        @include transition(0.5s);
+      }
+      &:hover{
+        path {
+          fill: $light_gray;
+          @include transition(0.5s);
+        }
+      }
+    }
+  }
+}

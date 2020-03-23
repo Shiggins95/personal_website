@@ -1,0 +1,184 @@
+#home_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: #6f7ca5;
+}
+#home_container .welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  border-bottom: 5px solid #99A8B6;
+}
+#home_container .welcome h1, #home_container .welcome h2 {
+  font-weight: 100;
+  color: #F9F9F8;
+  text-align: center;
+}
+#home_container .welcome h1 #one, #home_container .welcome h2 #one {
+  color: #ecff99;
+}
+#home_container .welcome h1 #two, #home_container .welcome h2 #two {
+  color: #93ffbe;
+}
+#home_container .welcome h1 #three, #home_container .welcome h2 #three {
+  color: #82ffeb;
+}
+#home_container .welcome .down_arrow {
+  border: 1px solid black;
+}
+#home_container .welcome .down_arrow .fa_chevron_down_1 {
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
+  transform: scale(2);
+  position: absolute;
+  bottom: 7.5vh;
+}
+#home_container .welcome .down_arrow .fa_chevron_down_2 {
+  -webkit-animation-name: down_arrow;
+  -moz-animation-name: down_arrow;
+  -o-animation-name: down_arrow;
+  animation-name: down_arrow;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-animation-duration: 0.8s;
+  -moz-animation-duration: 0.8s;
+  -o-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  position: absolute;
+  animation-iteration-count: infinite;
+}
+#home_container .welcome .down_arrow:hover {
+  cursor: pointer;
+}
+#home_container #journey {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background: #162547;
+  min-height: 100vh;
+  border-bottom: 5px solid #99A8B6;
+}
+#home_container #journey div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #6f7ca5;
+  width: 40%;
+  margin: 20px 5%;
+  padding: 20px;
+  border: 3px solid #99A8B6;
+  min-height: 300px;
+}
+#home_container #journey .long {
+  width: 90%;
+}
+#home_container #journey h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  margin: 20px 0;
+  color: #F9F9F8;
+  width: 100%;
+}
+#home_container #journey #one {
+  color: #ecff99;
+}
+#home_container #journey #two {
+  color: #93ffbe;
+}
+#home_container #journey #three {
+  color: #82ffeb;
+}
+#home_container #journey p {
+  margin: 5px;
+  color: #162547;
+}
+#home_container #journey .wrong_was_i {
+  color: #93ffbe;
+}
+
+@media (max-width: 800px) {
+  #home_container #journey {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #home_container #journey h1 {
+    font-size: 1.6em;
+  }
+  #home_container #journey div {
+    margin: 10px 0;
+    width: 90%;
+    background: transparent;
+    border: 2px solid #99A8B6;
+    color: #99A8B6;
+  }
+  #home_container #journey p {
+    color: #6f7ca5;
+  }
+  #home_container .welcome {
+    padding: 20px;
+  }
+  #home_container .welcome h2 {
+    font-size: 1em;
+  }
+  #home_container .welcome .down_arrow .fa_chevron_down_1 {
+    bottom: 15vh;
+  }
+  #home_container .welcome .down_arrow .fa_chevron_down_2 {
+    -webkit-animation-name: down_arrow_resp;
+    -moz-animation-name: down_arrow_resp;
+    -o-animation-name: down_arrow_resp;
+    animation-name: down_arrow_resp;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+    -webkit-animation-duration: 0.8s;
+    -moz-animation-duration: 0.8s;
+    -o-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    position: absolute;
+    animation-iteration-count: infinite;
+  }
+}
+@keyframes down_arrow {
+  from {
+    bottom: 11vh;
+  }
+  to {
+    bottom: 9.2vh;
+  }
+}
+@keyframes down_arrow_resp {
+  from {
+    bottom: 17vh;
+  }
+  to {
+    bottom: 16vh;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */
