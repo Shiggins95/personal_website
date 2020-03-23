@@ -1,4 +1,4 @@
-import React, { Component, createRef, useEffect, useState } from 'react';
+import React, { createRef, useEffect, useState } from 'react';
 import '../styles/home.css';
 import JourneyComponent from '../components/display/journey';
 import WelcomeComponent from '../components/display/welcome';
