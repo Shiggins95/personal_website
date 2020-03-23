@@ -2,8 +2,6 @@ import React, { Component, createRef, useEffect, useState } from 'react';
 import '../styles/home.css';
 import JourneyComponent from '../components/display/journey';
 import WelcomeComponent from '../components/display/welcome';
-import { useSelector, useDispatch } from 'react-redux';
-import { updateNav } from '../redux/actions';
 import ExperienceComponent from '../components/display/experience';
 
 const HomeContainer = () => {
