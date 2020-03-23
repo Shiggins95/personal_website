@@ -25,7 +25,7 @@ export const projects = [
   {
     id: 1,
     title: 'Personal Website',
-    url_front: null,
+    url_front: 'https://github.com/Shiggins95/personal_website',
     url_live: 'http://www.stephen-higgins.co.uk',
     stack: 'React, CSS, Redux',
     image_title: personal_website,
