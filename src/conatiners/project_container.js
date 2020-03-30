@@ -56,7 +56,6 @@ const ProjectContainer = props => {
           {frontendLink}
           {liveDemoLink}
           {!thisWebsite ? <p>**Apps are hosted on Heroku so can take a minute to load. Please wait**</p> : null}
-          {thisWebsite ? <p>**Github link available soon**</p> : null}
         </div>
 
         <div className="image">
