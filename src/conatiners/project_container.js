@@ -30,7 +30,6 @@ const ProjectContainer = props => {
   const backendLink = createLink(url_back, 'Java Backend: ');
   const frontendLink = createLink(url_front, 'React Frontend: ');
   const liveDemoLink = createLink(url_live, 'Live Demo: ');
-  const thisWebsite = title === 'Personal Website';
   const [loaded, setLoaded] = useState(false);
   const anchorRef = createRef();
   useEffect(() => {
@@ -42,7 +41,7 @@ const ProjectContainer = props => {
       document.title = 'Stephen Higgins | ' + project.title;
       setLoaded(true);
     }
-  }, [loaded, anchorRef]);
+  }, [loaded, anchorRef, project.title]);
   return (
     <div id="project_container">
       <div id="scroll_anchor" ref={anchorRef} />
@@ -55,7 +54,6 @@ const ProjectContainer = props => {
           {backendLink}
           {frontendLink}
           {liveDemoLink}
-          {!thisWebsite ? <p>**Apps are hosted on Heroku so can take a minute to load. Please wait**</p> : null}
         </div>
 
         <div className="image">
