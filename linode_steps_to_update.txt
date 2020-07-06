@@ -1,0 +1,15 @@
+npm run build in local terminal.
+
+git push to remote.
+
+go to linode container and then inside personal_website git pull
+
+cd /docker/letsencrypt-docker-nginx/src/production - in linode container
+
+rm -rf ./production-site
+
+cp -rf ../../../../root/personal_website/build/* ./production-site/
+
+docker-compose build
+
+docker-compose up
