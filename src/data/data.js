@@ -65,11 +65,11 @@ export const projects = [
       { image: signup_screen, title: 'Signup Screen' }
     ],
     description_s:
-      'The reason I wanted to learn web development. I wanted to build a Pokemon store.' +
+      'The reason I wanted to learn web development. I wanted to build a Pokemon store. ' +
       'I started this as a way to learn Redux and how to implement the Stripe API for payment processing. I still ' +
-      'have some work to do on this. At present the payment processing works but there is no feedback for declined payments' +
+      'have some work to do on this. At present the payment processing works but there is no feedback for declined payments ' +
       'or successful ones. The filters were a challenge here as getting them to work with Redux, to store its state when ' +
-      'using different parts of the app was difficult. It was a challenge I enjoyed though as learning Redux has been incredibly' +
+      'using different parts of the app was difficult. It was a challenge I enjoyed though as learning Redux has been incredibly ' +
       'useful.',
     time_estimate: 'This took approx. 5 days to build',
     optimised: false
@@ -91,10 +91,10 @@ export const projects = [
       { image: transfer_players_view, title: 'List of all players that can be transferred from a selected team' }
     ],
     description_s:
-      'This was my final project at CodeClan. I wanted to build a full stack application that would connect' +
+      'This was my final project at CodeClan. I wanted to build a full stack application that would connect ' +
       'retrieve data from a Java backend and display it using React. I think my most satisfying part of this is the ' +
-      'sort functions when in team view. I worked a lot on the different routes in the backend, and although I know' +
-      'that this wasnt the most efficient way of getting data, I wanted practice with the backend API routes.',
+      'sort functions when in team view. I worked a lot on the different routes in the backend, and although I know ' +
+      'that this wasnt the most efficient way of getting data, I wanted practice with the backend API routes. ',
     time_estimate:
       "This took approx. 6 days to complete, and although it still isn't complete, I still think it gives a good " +
       'representation of what I can do in a short period of time.',
