@@ -74,7 +74,7 @@ const ContactContainer = () => {
       <div className="information">
         <p>
           If you would like to contact me for building your website, for other business enquiries or just to say hello,
-          please end me an email below.
+          please send me an email below.
         </p>
         <p>
           Make sure to send any other contact information in your message so I can contact you back as soon as I can

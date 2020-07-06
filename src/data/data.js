@@ -41,8 +41,8 @@ export const projects = [
       { image: responsive_projects, title: 'Projects Responsive View' }
     ],
     description_s:
-      'This is a personal project I have just completed. I wanted this to be a beautiful showcase of my work' +
-      'to help me offer my services in building websites for clients and helping them achieve their business goals. This' +
+      'This is a personal project I have just completed. I wanted this to be a beautiful showcase of my work ' +
+      'to help me offer my services in building websites for clients and helping them achieve their business goals. This ' +
       'is purely frontend, built using React and it is my first time building a project with mobile optimisation in mind.',
     time_estimate: 'This took approx. 2 days to build.',
     optimised: true
