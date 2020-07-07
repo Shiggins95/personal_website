@@ -79,7 +79,7 @@ export const projects = [
     title: 'Not Football Manager',
     url_front: 'https://github.com/Shiggins95/notFootballManager_react',
     url_back: 'https://github.com/Shiggins95/notFootballManager_java_backend',
-    url_live: 'http://139.162.211.53/',
+    // url_live: 'http://139.162.211.53/',
     stack: 'React, Java, CSS, Spring, Hibernate, PostgreSQL',
     image_title: nfm_react,
     logo_title: nfm_logo,
