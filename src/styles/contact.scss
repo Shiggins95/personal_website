@@ -3,7 +3,7 @@
 #contact_container{
   @include flex_center_col;
   background: $light_blue;
-  min-height: 100vh;
+  min-height: calc(100vh - 50px);
   width: 100%;
   .form {
     @include flex_center_row_wrap;

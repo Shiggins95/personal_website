@@ -1,41 +1,36 @@
 {
   "files": {
-    "main.css": "/static/css/main.a1c586e2.chunk.css",
-    "main.js": "/static/js/main.69c2b81e.chunk.js",
-    "main.js.map": "/static/js/main.69c2b81e.chunk.js.map",
+    "main.css": "/static/css/main.2be2865a.chunk.css",
+    "main.js": "/static/js/main.b454199c.chunk.js",
+    "main.js.map": "/static/js/main.b454199c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c34c0ec6.js",
     "runtime-main.js.map": "/static/js/runtime-main.c34c0ec6.js.map",
-    "static/js/2.489ad734.chunk.js": "/static/js/2.489ad734.chunk.js",
-    "static/js/2.489ad734.chunk.js.map": "/static/js/2.489ad734.chunk.js.map",
+    "static/js/2.37d891ae.chunk.js": "/static/js/2.37d891ae.chunk.js",
+    "static/js/2.37d891ae.chunk.js.map": "/static/js/2.37d891ae.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.7ca98850cb49e65574b22a630b6f9e26.js": "/precache-manifest.7ca98850cb49e65574b22a630b6f9e26.js",
+    "precache-manifest.67cc5d82bce8a074952200694bb39694.js": "/precache-manifest.67cc5d82bce8a074952200694bb39694.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.a1c586e2.chunk.css.map": "/static/css/main.a1c586e2.chunk.css.map",
-    "static/js/2.489ad734.chunk.js.LICENSE.txt": "/static/js/2.489ad734.chunk.js.LICENSE.txt",
+    "static/css/main.2be2865a.chunk.css.map": "/static/css/main.2be2865a.chunk.css.map",
+    "static/js/2.37d891ae.chunk.js.LICENSE.txt": "/static/js/2.37d891ae.chunk.js.LICENSE.txt",
     "static/media/checkout_screen.png": "/static/media/checkout_screen.e34dd39c.png",
     "static/media/contact_me.png": "/static/media/contact_me.7a57f45a.png",
     "static/media/image_showcase.png": "/static/media/image_showcase.8e71d3b7.png",
     "static/media/logged_in_screen.png": "/static/media/logged_in_screen.753f59ff.png",
     "static/media/login_screen.png": "/static/media/login_screen.74a39cf0.png",
-    "static/media/managers_view.png": "/static/media/managers_view.d4956745.png",
     "static/media/my_experience.png": "/static/media/my_experience.8c34e7f9.png",
-    "static/media/nfm_react.png": "/static/media/nfm_react.2967ea76.png",
     "static/media/personal_website.png": "/static/media/personal_website.843e8da7.png",
-    "static/media/players_view.png": "/static/media/players_view.7f9adde9.png",
     "static/media/pokemon_store.png": "/static/media/pokemon_store.5805f76d.png",
     "static/media/projects.png": "/static/media/projects.06670261.png",
     "static/media/responsive_menu.png": "/static/media/responsive_menu.f3e9084b.png",
     "static/media/responsive_project.png": "/static/media/responsive_project.d81377f7.png",
     "static/media/responsive_projects.png": "/static/media/responsive_projects.d06ad859.png",
     "static/media/shopping_cart.png": "/static/media/shopping_cart.2516daad.png",
-    "static/media/signup_screen.png": "/static/media/signup_screen.8afd0d11.png",
-    "static/media/team_players_view.png": "/static/media/team_players_view.3416d4b1.png",
-    "static/media/transfer_players_view.png": "/static/media/transfer_players_view.acb729d7.png"
+    "static/media/signup_screen.png": "/static/media/signup_screen.8afd0d11.png"
   },
   "entrypoints": [
     "static/js/runtime-main.c34c0ec6.js",
-    "static/js/2.489ad734.chunk.js",
-    "static/css/main.a1c586e2.chunk.css",
-    "static/js/main.69c2b81e.chunk.js"
+    "static/js/2.37d891ae.chunk.js",
+    "static/css/main.2be2865a.chunk.css",
+    "static/js/main.b454199c.chunk.js"
   ]
 }

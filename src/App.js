@@ -1,5 +1,5 @@
 import React, { createRef, Fragment, useEffect, useState } from 'react';
-import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import NavBar from './navbar/navbar.js';
 import HomeContainer from './conatiners/home_container.js';
 import ContactContainer from './conatiners/contact_container';
@@ -9,6 +9,7 @@ import './styles/app.css';
 import { useSelector } from 'react-redux';
 import ExperienceComponent from './components/display/experience';
 import FooterComponent from './footer/footer';
+import { NoMatch } from './conatiners/no_match';
 
 function App() {
   const display = useSelector(state => state.nav);
@@ -28,29 +29,32 @@ function App() {
           <NavBar />
         </div>
         <div id="body">
-          <Route
-            exact
-            path="/"
-            render={() => {
-              return <HomeContainer reactRef={ref} />;
-            }}
-          />
-          <Route
-            exact
-            path="/contact"
-            component={() => {
-              return <ContactContainer reactRef={ref} />;
-            }}
-          />
-          <Route exact path="/projects" component={ProjectsContainer} reactRef={ref} />
-          <Route
-            exact
-            path="/project/:id"
-            render={props => {
-              const { id } = props.match.params;
-              return <ProjectContainer projectId={id} reactRef={ref} />;
-            }}
-          />
+          <Switch>
+            <Route
+              exact
+              path="/"
+              render={() => {
+                return <HomeContainer reactRef={ref} />;
+              }}
+            />
+            <Route
+              exact
+              path="/contact"
+              component={() => {
+                return <ContactContainer reactRef={ref} />;
+              }}
+            />
+            <Route exact path="/projects" component={ProjectsContainer} reactRef={ref} />
+            <Route
+              exact
+              path="/project/:id"
+              render={props => {
+                const { id } = props.match.params;
+                return <ProjectContainer projectId={id} reactRef={ref} />;
+              }}
+            />
+            <Route component={NoMatch} />
+          </Switch>
           <FooterComponent />
         </div>
       </div>

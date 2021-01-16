@@ -1,0 +1,23 @@
+.no_match_container {
+  background: #6f7ca5;
+  color: #162547;
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Caveat", cursive;
+  font-size: 30px;
+}
+.no_match_container p {
+  letter-spacing: 2px;
+}
+.no_match_container p a {
+  color: inherit;
+  opacity: 0.8;
+}
+.no_match_container * {
+  margin: 20px 0;
+}
+
+/*# sourceMappingURL=no_match.css.map */

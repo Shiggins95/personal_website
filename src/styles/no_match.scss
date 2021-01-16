@@ -1,0 +1,23 @@
+@import "mixins";
+@import "variables";
+.no_match_container {
+  background: $light_blue;
+  color: $dark_blue;
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Caveat", cursive;
+  font-size: 30px;
+  p{
+    letter-spacing: 2px;
+    a{
+      color: inherit;
+      opacity: 0.8;
+    }
+  }
+  * {
+    margin: 20px 0;
+  }
+}
