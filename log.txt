@@ -1,0 +1,19 @@
+http {
+    server {
+
+            server_name ps.stephen-higgins.co.uk;
+
+            root /etc/nginx/sites-available/pokemon_store;
+
+            location / {
+
+                    try_files $uri /$uri /index.html;
+
+            }
+
+    }
+}
+
+events {
+
+}

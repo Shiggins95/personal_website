@@ -17,6 +17,11 @@ function App() {
   const ref = createRef();
   const [loaded, setLoaded] = useState(false);
   useEffect(() => {
+    // const test = async () => {
+    //   const data = await fetch('/api/');
+    //   console.log(await data.json());
+    // };
+    // test();
     if (loaded === false) {
       ref.current.scrollIntoView();
       setLoaded(true);
