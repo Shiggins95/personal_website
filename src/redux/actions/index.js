@@ -10,6 +10,4 @@ export const displayProject = () => {
   };
 };
 
-export const updateRef = () => {
-
-}
+export const updateRef = () => {};

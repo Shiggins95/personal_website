@@ -28,7 +28,7 @@ const ProjectContainer = props => {
     ) : null;
   };
   const backendLink = createLink(url_back, 'Java Backend: ');
-  const frontendLink = createLink(url_front, 'React Frontend: ');
+  const frontendLink = createLink(url_front, 'Github: ');
   const liveDemoLink = createLink(url_live, 'Live Demo: ');
   const [loaded, setLoaded] = useState(false);
   const anchorRef = createRef();
