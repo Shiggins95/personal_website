@@ -47,7 +47,7 @@ const ProjectContainer = props => {
       <div id="scroll_anchor" ref={anchorRef} />
       <div className="inner_container">
         <div className="details">
-          <ProjectDescription {...project} />
+          <ProjectDescription {...project} full />
         </div>
         <div className="links">
           <h1>View source code and Live demo</h1>

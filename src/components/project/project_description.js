@@ -4,7 +4,7 @@ import LinkComponent from '../links/link';
 import '../../styles/project_description.css';
 
 const ProjectDescription = props => {
-  const { title, stack, description_s, time_estimate, frontend, id, renderLinks } = props;
+  const { title, stack, description_s, description_f, time_estimate, frontend, id, renderLinks, full } = props;
   return (
     <div className="description">
       <div className="header">
@@ -17,7 +17,7 @@ const ProjectDescription = props => {
       <div className="body">
         <p>
           <span className="desc_span">Description: </span>
-          {description_s}
+          {full && description_f ? description_f : description_s}
         </p>
         <p id="time_estimate">{time_estimate}</p>
         {renderLinks ? (
@@ -35,8 +35,10 @@ ProjectDescription.propTypes = {
   title: PropTypes.string,
   stack: PropTypes.string,
   description_s: PropTypes.string,
+  description_f: PropTypes.string,
   time_estimate: PropTypes.string,
-  frontend: PropTypes.object
+  frontend: PropTypes.object,
+  full: PropTypes.bool
 };
 
 export default ProjectDescription;

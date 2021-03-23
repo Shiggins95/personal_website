@@ -26,7 +26,7 @@ export const projects = [
     title: 'Personal Website',
     url_front: 'https://github.com/Shiggins95/personal_website',
     url_live: 'http://www.stephen-higgins.co.uk',
-    stack: 'React, CSS, Redux',
+    stack: 'React, CSS, Redux.',
     image_title: personal_website,
     logo_title: sh_logo,
     images: [
@@ -39,7 +39,7 @@ export const projects = [
       { image: responsive_projects, title: 'Projects Responsive View' }
     ],
     description_s:
-      'This is a personal project I have just completed. I wanted this to be a beautiful showcase of my work ' +
+      'This is a personal project I have just completed. I wanted this to be a b-e-a-utiful showcase of my work ' +
       'to help me offer my services in building websites for clients and helping them achieve their business goals. This ' +
       'is purely frontend, built using React and it is my first time building a project with mobile optimisation in mind.',
     time_estimate: 'This took approx. 2 days to build.',
@@ -47,10 +47,10 @@ export const projects = [
   },
   {
     id: 2,
-    title: 'Currency Converter - Custom Inputs',
+    title: 'Currency Converter',
     url_front: 'https://github.com/Shiggins95/exchange_rates',
     url_live: 'https://reactmap.stephen-higgins.co.uk/exchangerates/',
-    stack: 'React, SCSS, Redux. Hosted via a Digital Ocean Linux container using NGINX',
+    stack: 'React, SCSS, Redux.',
     image_title: er_home_page,
     logo_title: er_logo,
     images: [
@@ -63,6 +63,9 @@ export const projects = [
     ],
     description_s:
       'The idea behind this app was that I built some custom inputs and wanted to implement them in a basic web app. The inputs include a date picker, select menu, multiple select menu and a text input. I only implemented the date picker, ' +
+      ' select menu and text input, but have plans to include additional pages to allow the use of my other components...',
+    description_f:
+      'The idea behind this app was that I built some custom inputs and wanted to implement them in a basic web app. The inputs include a date picker, select menu, multiple select menu and a text input. I only implemented the date picker, ' +
       ' select menu and text input, but have plans to include additional pages to allow the use of my other components. The app is very simple and allows you to enter a specific date and currency pair and retrieve their exchange rates against other currencies. ' +
       ' There is also a page that allows you enter a value to exchange.',
     time_estimate: 'This took approx. 3 days to build, including building the custom inputs.',
@@ -70,10 +73,10 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Shig's Salon Services - Bookings App",
+    title: "Shig's Salon Services",
     url_front: 'https://github.com/Shiggins95/booking_system',
     url_live: 'https://reactmap.stephen-higgins.co.uk/bookingsapp/',
-    stack: 'TypeScript, React, Nodejs, SCSS, MongoDB, Redux. Hosted via a Digital Ocean Linux container using NGINX',
+    stack: 'TypeScript, React, Nodejs, SCSS, MongoDB, Redux.',
     image_title: bookings_home_page,
     logo_title: sh_logo,
     images: [
@@ -86,12 +89,13 @@ export const projects = [
     ],
     description_s:
       'This was my first attempt at using TypeScript and it was a fun and challenging learning experience. My main focus here was to build a basic company facing web app to manage client bookings. ' +
+      'You can select a stylist, select a category and view a list of services that the stylist provides...',
+    description_f:
+      'This was my first attempt at using TypeScript and it was a fun and challenging learning experience. My main focus here was to build a basic company facing web app to manage client bookings. ' +
       'You can select a stylist, select a category and view a list of services that the stylist provides. The backend was built using nodeJS and MongoDB and although there are routes available to allow a full CRUD app to be built ' +
       'these have not been added to the front end of the app. Using redux to simplify the state management of the app allowed me to pass state to multiple components easily, without having a large complicated dependency tree.' +
       'A main goal of this app was to also solidify my knowledge of deploying to a linux container and setting up a web server using NGINX, also adding multiple routes so that I could display more than one app for the same URL.',
-    time_estimate:
-      'This took approx. 3 weeks to build. Although actual development time was around 1 week. A lot of the bloated timescale was due to learning TypeScript and implementing types, along with some weird ' +
-      'parts where I was having issues with passing the correct types through in functions.',
+    time_estimate: 'This took approx. 3 weeks to build. Including the learning process of TypeScript.',
     optimised: false
   }
 ];
