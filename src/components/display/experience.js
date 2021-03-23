@@ -30,7 +30,7 @@ const ExperienceComponent = props => {
             projects. Below are only some of the technologies I have used.
           </p>
           <p>
-            In addition to these, I have also used Unity and C# to develop a fun Flappy Bird game, I have implemented
+            In addition to these, I have also used Unity and C# participate in multiple game jams, I have implemented
             JWTs (JSON Web Tokens) to help with authentication and I have also utilized the Stripe API for handling
             payments.
           </p>

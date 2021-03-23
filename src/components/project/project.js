@@ -32,7 +32,7 @@ const ProjectComponent = props => {
     <div className="project_container" onClick={handleClick}>
       <MobileOptimised display={project.optimised} />
       <div className="contents">
-        <ProjectDescription {...descriptionProps} />
+        <ProjectDescription {...descriptionProps} full={false} />
       </div>
       <div className="showcase">
         <img src={project.image_title} alt="title" className="project_image" />
